@@ -25,6 +25,7 @@ namespace ShopOnline.API
             );
 
             builder.Services.AddScoped<IProductRepository, ProductRepository>();
+            builder.Services.AddScoped<IShoppingCartRepository, ShoppingCartRepository>();
 
             var app = builder.Build();
 
